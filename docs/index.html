@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XctFlow</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CoDeF: Content Deformation Fields for Temporally Consistent Video Processing</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Qingze Bai</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/qiuyu96">Xiaodong Xie</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">ZhenDuo Chen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#">Xin Luo</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="#"> Xin-Shun Xu</a><sup>1*</sup>,
+          </div>
+		
+		
+		  <div class="is-size-5 publication-authors">
+		    <span class="author-block"><sup>1</sup> School of Software, Shandong University</span>&ensp;
+          </div>
+          <!--<div class="is-size-3 publication-authors">
+            <span class="author-block">publish on Transactions on Medical Imaging</span>
+          </div> -->
+            <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Begin gallery. -->
+<section class="hero is-light is-small">
+
+
+  <div class="hero-body">
+
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <br/>
+      </div>
+    </div>
+	 <!-- Begin gallery-1. -->
+    <div class="container">
+      <div id="results-carousel1" class="carousel results-carousel">
+        <div class="item g11">
+          <video poster="" id="g11" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/video/case_577.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item g12">
+          <video poster="" id="g12" autoplay controls muted loop playsinline width="100%">
+            <source src="static/video/case_751_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item g13">
+          <video poster="" id="g13" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/video/case_991.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+                <div class="item g14">
+          <video poster="" id="g14" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/video/case_667.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End gallery. -->
+<br>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Consistent</span> <span class="dnerf">CT</span> <span class="dnerf">Reconstruction</span> with anatomical priors learned from orthogonal biplane radiographs. For all the demos, the Ground Truth are provided on the left.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<br>
+
+
+
+<!-- Begin abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <img src='static/images/framework.png' id="framework"><br><br>
+        <div class="content has-text-justified">
+          <p>
+            Our key insight is to <b>incorporate geometric constraints into the generative models</b>. In this paper,
+            we present the <b>XctFlow</b>, a novel conditional flow matching framework for reconstructing CT images from
+            orthogonal biplane X-ray radiographs, which simulates the parallel projection process to extract 3D anatomical
+            priors from radiographs and subsequently reconstructs these priors into accurate CT representations
+            through a deterministic and differentiable continuous probabilistic path.
+          </p>
+          <p>
+            To simulate parallel projection, we proposed <b>orthogonal constraint-based projection reconstruction
+            module (OrthoPRM)</b>, which ensures geometric consistency and prevents distortions by focusing only on the 3D anatomical structures
+            related to the corresponding pixels. Furthermore, we introduce <b>orthogonality loss</b> as a regularization term
+            to improve the simulation of the parallel beam sampling process. <b>Building upon CNF</b>, the reconstruction process
+            of XctFlow constructs a differentiable continuous probability path between anatomical priors and accurate CT representations.
+          </p>
+
+          <p>
+            Experimental results demonstrate that XctFlow achieves state-of-the-art performance, excelling
+            in both anatomical detail and image quality. Benefiting from this improved performance, we extend
+            XctFlow to two downstream tasks, <b>organ segmentation</b> and <b>body composition analysis</b>, showcasing its
+            potential in various medical applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<!-- End abstract -->
+
+
+
+<!-- Other applications. -->
+
+<!-- Medical Image Segmentation. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Other Applications</h2>
+        <img src='static/images/organ_segmentation.png' id="organ segmenatation">
+      </div>
+
+    </div>
+    <div class="hero-body" style="padding: 0rem 1.5rem">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Medical</span> <span class="dnerf">Image</span> <span class="dnerf">Segmentation</span> with reconstructed CT from orthogonal biplane radiographs.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Body Composition Analysis. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src='static/images/body_composition_analysis.png' id="body_composition_analysis">
+      </div>
+
+    </div>
+          <div class="hero-body" style="padding: 0rem 1.5rem">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Body</span> <span class="dnerf">Composition</span> <span class="dnerf">Analysis</span> with reconstructed CT from orthogonal biplane radiographs.
+      </h2>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/qingze-bai" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="content has-text-centered">
+        <div class="content">
+          <p>
+            This website was modified from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We appreciate for sharing this perfect template!
+          </p>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+bulmaCarousel.attach('#results-carousel1', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel2', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel3', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: false,
+});
+</script>
+
+</body>
+</html>
+ 
